@@ -1,42 +1,34 @@
 // General welcome message
-console.log("Hello 😊 CFG Ladies!!");
-console.log(
-  "I'm very happy to be here and am really surprised there are so many of us from Valencia"
-);
-
-// Const of name and place
-const questionFirstName = "My name is Paula. What's your name?";
-console.log(questionFirstName);
-
-const myFirstName = prompt("What is your name?");
+const name = prompt("What is your name?");
 const place = prompt("Where are you from?");
+alert(`Hello ${name} from ${place} 😊. I would be happy to create a weekend shopping list for you`);
 
-// Confirm name and place in welcome message
-const messageWelcome = `${myFirstName} from ${place}`;
-// Output welcome message to consol
-console.log("It is very nice to meet you " + messageWelcome);
+// Shopping list
+const shoppingList = [];
 
-// Const for weekly salary
-const weeklySalary = prompt("How much do you earn per week (NET)?");
-// Output message to consol
-console.log(
-  "I understand you would like to calculate your hourly rate. Please enter your average weekly NET salary into the prompt"
-);
 
-// Output message to consol confirming weekly salary entered
-console.log("We confirm you have entered " + weeklySalary + " per week");
+// Function to ask yes/no questions and update the shopping list
+function askYesNoQuestion(item) {
+  const answer = prompt(`Do you need ${item}? Yes or No?`);
+  
+  if (answer.toLowerCase() === "yes") {
+    const quantity = prompt(`How many ${item}s do you need?`);
+    shoppingList.push(`${quantity} ${item}`);
+    
+  } else if (answer.toLowerCase() !== "no") {
+    
+    // If the user enters an invalid response, prompt again
+    alert("Please enter 'yes' or 'no'");
+    askYesNoQuestion(item);
+  }
+}
 
-// Const for hours per week
-const weeklyHours = prompt("How many hours do you work per week?");
-// Output message to consol
-console.log("Now enter into the prompt the number of hours you work per week");
+// call questions for each item
+askYesNoQuestion("chocolate");
+askYesNoQuestion("vodka");
+askYesNoQuestion("beer");
+askYesNoQuestion("wine");
 
-// Output message to consol confirming weekly hours entered
-console.log("We confirm you have entered " + weeklyHours + " hours per week");
-
-// Const for calculating hourly rate
-const messageHourlyRate = weeklySalary / weeklyHours;
-// Output message to consol confirmation of hourly rate
-console.log(
-  "Thankyou. We calculate your NET hourly rate is " + messageHourlyRate
-);
+// Display shopping list
+//The join('\n') part helps separate the items with a newline
+alert("Your shopping list:\n" + shoppingList.join('\n') + '\n' + "Have a great weekend!! 😉\n");
