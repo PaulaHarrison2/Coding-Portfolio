@@ -1,0 +1,22 @@
+<style>
+    body {
+        text-align: center;
+    }
+
+    .customizer-section {
+        margin-bottom: 20px;
+    }
+
+    .wall-color {
+        background-color: red;
+        width: 250px;
+        height: 150px;
+        position: relative;
+        display: inline-block;
+    }
+
+    img {
+        position: relative;
+        z-index: 1;
+    }
+</style>

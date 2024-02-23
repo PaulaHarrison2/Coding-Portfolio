@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Words that will show on browser tab -->
+    <title>Room Colour Customizer</title>
+</head>
+
+  <!-- Words etc that will show in the main body -->
+<body>
+  <!-- Image from unsplash which appears above the title phrase -->
+  <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1706872221/paint_samples_long_ltetvm.png" alt="" >
+  <h1>Wouldn't it be great if you could see what your room looked like before you painted it.</h1>
+  <p>Sometimes it's really difficult to visualize what your existing furniture would look like with a different coloured palette on your walls.</p>
+  <p>You could buy lots of paint samples and cover your walls in little patches of colour, but does that really help.</p>
+  <p>In most cases, you just end up with a room looking even worse than it was before and a bigger decision of what colour to finally choose.</p>
+  <p>Our new Room Colour Customizer is here to help you save money and time.</p>
+  <h2>Room Colour Customizer</h2>
+  <p>Visualize how your room would look in different colours</p>
+     
+<!-- set up the room color options -->
+  <div class="customizer-section">
+    Room Colour:
+    <select id="wall-color" onchange="applyWallColor()">
+      <option value="" disabled selected>Select your colour</option>
+      <option value="pink">Pink</option>
+      <option value="lightsalmon">Light Salmon</option>
+      <option value="darkorange">Dark Orange</option>
+      <option value="palegreen">Pale Green</option>
+      <option value="teal">Teal</option>
+    </select>
+  </div>
+
+    <!-- create a box to represent the wall behind the sofa which can be filled with a color that changes depending on what color the user selects -->
+  <div class="wall-color" id="wall" style="width: 350px; height: 250px;"></div>
+  </div>
+  </div>
+</body>
+</html>

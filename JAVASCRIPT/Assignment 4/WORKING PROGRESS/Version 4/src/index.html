@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Words that will show on browser tab -->
+    <title>Room Colour Customizer</title>
+</head>
+
+  <!-- Intro words -->
+<body>
+    <h1>Room Colour Customizer</h1>
+    <h2>Hello. How are you today?<br>Would you like to visualize how your room would look in different colours?</h2>
+
+    <!-- set up the room color options -->
+    <div class="customizer-section">
+        Room Colour:
+        <select id="wall-color" onchange="applyWallColor()">
+          <option value="" disabled selected>Select your colour</option>
+          <option value="pink">Pink</option>
+          <option value="lightsalmon">Light Salmon</option>
+          <option value="darkorange">Dark Orange</option>
+          <option value="palegreen">Pale Green</option>
+          <option value="teal">Teal</option>
+          
+        </select>
+    </div>
+
+    <!-- create a box to represent the wall behind the sofa which can be filled with a color that changes depending on what color the user selects -->
+    <div class="wall-color" id="wall" style="width: 250px; height: 150px;"></div>
+
+
+    <!-- image of sofa saved on Google drive -->
+    <!-- Thumbnail link without width -->
+  <!-- but to get the image to overlay the coloured block, put the code in CSS instead
+ <img src="https://drive.google.com/thumbnail?id=1aZn8nTfAfLdjrfj-o4egXveEK3-QJsXB" alt="sofa cut out">-->
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Room Colour Customizer</title>
+    <!-- Intro words -->
+</head>
+
+<body>
+    <h1>Room Colour Customizer</h1>
+    <h2>Hello. How are you today?<br>Would you like to visualize how your room would look in different colors?</h2>
+
+    <!-- set up the room color options -->
+    <div class="customizer-section">
+        Room Colour:
+        <select id="wall-color" onchange="applyWallColor()">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+        </select>
+    </div>
+
+    <!-- create a box to represent the wall behind the sofa which can be filled with a color that changes depending on what color the user selects -->
+    <div class="wall-color" id="wall" style="background-color: red; width: 250px; height: 150px;"></div>
+
+
+    <!-- image of sofa saved on Google drive -->
+    <!-- Thumbnail link without width -->
+    <img src="https://drive.google.com/thumbnail?id=1aZn8nTfAfLdjrfj-o4egXveEK3-QJsXB" alt="sofa cut out">
+</body>
+
+</html>

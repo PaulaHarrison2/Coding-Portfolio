@@ -1,0 +1,59 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container {
+    display: flex;
+}
+
+.column {
+    margin: 20px;
+}
+
+#column1 h1 {
+    color: pink;
+    font-size: 40px;
+  margin-top: 0px; 
+}
+#column1 h2 {
+    color: pink;
+    font-size: 30px;
+}
+
+#column1 p {
+    font-size: 18px;
+}
+
+#column1 {
+    width: 50%; /* Adjust the percentage as needed */
+    border: 10px double gray;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.customizer-section {
+    margin-bottom: 20px;
+}
+
+.wall-color {
+    width: 450px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    background: url('https://res.cloudinary.com/dq03n8sze/image/upload/v1706859181/Sofa_table_-11_sml_sml_xockt8.png') center/cover no-repeat, gray;
+}
+
+#column2 img {
+    max-width: 40%; /* Adjust the percentage as needed */
+    height: auto; /* Maintain original height */
+    display: block;
+    margin: auto;
+}

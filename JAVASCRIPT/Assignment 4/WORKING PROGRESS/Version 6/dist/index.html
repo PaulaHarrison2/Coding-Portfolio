@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Session 4 (6) 2 columns FINAL test image</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cloudinary.com/ 'unsafe-inline';">
+    <title>Room Colour Customizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+  
+<body>
+    <div class="container">
+        <div class="column" id="column1">
+            <h1>Wouldn't it be great if you could see what your room looked like before you painted it.</h1>
+            <p>Sometimes it's really difficult to visualize what your existing furniture would look like with a different coloured palette on your walls.</p>
+            <p>You could buy lots of paint samples and cover your walls in little patches of colour, but does that really help.</p>
+            <p>In most cases, you just end up with a room looking even worse than it was before and a bigger decision of what colour to finally choose.</p>
+            <p>Our new Room Colour Customizer is here to help you save money and time.</p>
+            <h2>Room Colour Customizer</h2>
+            <p>Visualize how your room would look in different colours</p>
+
+<!-- set up the room color options -->
+<div class="customizer-section">
+  Room Colour: <select id="wall-color" onchange="applyWallColor()">
+  <option value="" disabled selected>Select your colour</option>
+  <option value="pink">Pink</option>
+  <option value="lightsalmon">Light Salmon</option>
+  <option value="darkorange">Dark Orange</option>
+  <option value="palegreen">Pale Green</option>
+  <option value="teal">Teal</option>
+  </select>
+          </div>
+
+<!-- create a box to represent the wall behind the sofa which can be filled with a color that changes depending on what color the user selects -->
+          <div class="wall-color" id="wall"></div>
+      </div>
+      <div class="column" id="column2">
+        
+<!-- Image from unsplash that fills column 2 -->
+            <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1706859859/paint_samples_icazfk.png" alt="" style="max-width: 100%; height: 100%;">
+        </div>
+    </div>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

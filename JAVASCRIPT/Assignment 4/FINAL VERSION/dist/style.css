@@ -1,0 +1,50 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  font-family: Arial, sans-serif; 
+  
+  /* create a border around the body but at a certain size and not to the full width of the page*/
+  border: 10px double gray; /* the border */
+  width: 500px; /* the width of the border */
+  margin: 20px auto; /* Center the border horizontally */
+  padding: 20px;
+}
+
+h1 {
+  color: pink;
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+h2 {
+  color: pink;
+  font-size: 30px;
+}
+
+p {
+  font-size: 18px;
+}
+      
+.customizer-section {
+  margin-bottom: 20px;
+}
+
+/*The code below modifies the .wall-color class to use a single div with a background that includes both the image and the colored overlay*/
+
+.wall-color {
+  width: 350px;
+  height: 250px;
+  margin: 0 auto;
+  position: relative; /* Set the position of the wall color container to relative */
+  background: url('https://res.cloudinary.com/dq03n8sze/image/upload/v1706859181/Sofa_table_-11_sml_sml_xockt8.png') center/cover no-repeat, gray; /* put image on a grey background to start with */
+}
+
+
+/*text-align property only works for inline elements and text, but not for block-level elements like images. If I want to center an image, I need to set its display property to block and use margin: auto. This will center the image horizontally within its container.*/
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto; /* Center the image horizontally and vertically */
+}
