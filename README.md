@@ -38,3 +38,9 @@ I chose to work independently on my final project, foregoing the opportunity to 
 
 ## Fun Facts
 On a personal note, as I mentioned earlier, I live off-grid in Spain, which has truly honed my skills. Achieving virtual self-sufficiency, I've mastered the art of constructing stone walls, built a swimming pool, and even wired my house to harness electricity from our solar panels.
+
+## My Oscar Finale
+And finally the thanks. I would like to thank [CodeFirstGirls](https://codefirstgirls.org.uk/) for this great opportunity, my instructors for their support and patience, my classmates for their hearts, medals, claps and star emojis and [@Commercetools.com](https://github.com/commercetools) for sponsoring the course. 
+
+But most importantly my husband. The man that has put food and drink in front of me for the last 8 weeks. The man that has convinced me I can do this when I struggled, and the man that has done all of this with barely a grunt of thanks in return. 💖
+
