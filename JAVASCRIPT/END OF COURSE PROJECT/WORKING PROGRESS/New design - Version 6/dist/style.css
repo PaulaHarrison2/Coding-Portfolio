@@ -1,0 +1,197 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: grid;
+  width: 1200px;
+  grid-template-columns: 100px 1fr 400px;
+  grid-template-rows: 250px 240px 100px auto;
+  margin: 20px auto; /* Center the grid container to sit 20px down from the top and horizontally on the whole page */
+  grid-template-areas:
+    "header header header"
+    "intro intro sidebar"
+    "carSize carSize sidebar"
+    "pattern largeCar sidebar";
+}
+
+/* HEADER STYLING */
+.header {
+  grid-area: header;
+  position: relative;
+}  
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  height: 70px;
+}
+.headline {
+  position: absolute;
+  top: 80px;
+  left: 55px;
+  text-align: left;
+}
+.headline h1 {
+  color: white;
+  font-size: 50px;
+  line-height: 1;
+  margin: 0;
+}
+
+/* COMPETITION STYLING */
+.sidebar {
+  grid-area: sidebar;
+  background: lightblue;
+}
+#formWording h1 {
+  color: white;
+  font-size: 130px;
+  line-height: 1;
+  margin-top: 0px;
+  margin: 0;
+}
+#formWording h2 {
+  color: white;
+  font-size: 48px;
+  line-height: 0;
+  margin-top: 0px;
+  margin: 0;
+}
+#formWording h3 {
+  color: black;
+  font: Arial, sans serif;
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 0px;
+  margin: 0;
+  padding: 25px
+}
+
+
+
+/* MAILING LIST STYLING */
+.form-group {
+  margin-bottom: 10px;
+  align-items: center;
+}
+label {
+  display: inline-block;
+  width: 100px; 
+  text-align: left;
+  margin-right: 10px;
+}
+select {
+  width: 200px; /* width of dropdwon to match othert input areas */
+  text-align: left;
+}  
+input[type="text"],
+input[type="email"], 
+input[type="tel"] {
+  width: 190px; /* width of input area */
+}
+
+/* Submit button Styling */
+input[type="submit"] {
+  background-color: darkblue;
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding around the text */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  margin-top: 20px; /* Margin at top of button to move it down the page a bit */
+  margin-bottom: 40px; /* Margin at top of button to move it down the page a bit */
+}
+
+/* Change background color of submit button on hover */
+input[type="submit"]:hover {
+  background-color: blue; /* Blue on hover */
+}
+
+#conditions h1 {
+  color: black;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+  margin-right: 10px; /* Increase or decrease margin-right as needed */
+  margin-left: 10px; /* Increase or decrease margin-left as needed */
+  padding: 5px;
+  line-height: 1; /* Adjust line height for better readability */
+}
+
+
+/* ROW 2 INTRO STYLING */
+.intro {
+  grid-area: intro;
+  background: lightgreen;
+}
+#introText h1 {
+    color: lightblue;
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 0px;
+    margin: 0;
+    padding-top: 10px;
+}
+#introText h2 {
+    color: grey;
+    font-size: 25px;
+  margin-top: 0px;
+    margin: 0;
+}
+#introText h3 {
+    color: grey;
+    font-size: 20px;
+    font-weight: normal;
+  margin-top: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ROW 3 CHOOSE YOUR CAR SIZE STYLING */
+.carSize {
+  grid-area: carSize;
+    background: lightpink;
+    display: grid;
+  grid-template-columns: 160px 180px 200px auto; /* Each column with its own width */
+      align-items: center;
+}
+.column1 h4{
+    color: lightblue;
+    font-size: 20px;
+    margin: 0;
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+/* ROW 4 LEFT = CHOOSE YOUR PATTERN STYLING */
+.pattern {
+  grid-area: pattern;
+      background: lightgrey;
+  display: grid;
+  grid-template-row: 40px auto; /* Each row with its own height */
+      align-items: left;
+}
+.row1 h4{
+    color: lightblue;
+    font-size: 20px;
+    margin: 0;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+
+/* ROW 4 RIGHT = ORIGINAL CAR SIZESTYLING */
+
+.largeCar {
+  grid-area: largeCar;
+    display: grid;
+justify-content: center;
+  align-items: center;
+}

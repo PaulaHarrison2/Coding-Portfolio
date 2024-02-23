@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FINAL PROJECT (12) by Paula Harrison</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+    <!-- Words that will show on browser tab -->
+    <title>Pretty My Car</title>
+</head>
+
+<!-- set up the columns within a grid -->
+<!-- Column A = Left,  Column B = Right -->
+<div class="grid">
+<!-- top row for logo -->
+  <div class="top-row1"> 
+  <div class="logo-container">
+    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707229325/logo_gr4iva.png" alt="">
+  </div>
+    </div>  
+
+<!-- Main column -->
+<!-- Column A -->
+  <div class="colA-row2">
+    <h2>Fed up with blending into the crowd?</h2>
+    <h1>Get ready to ditch the boring<br>and drive with style!! </h1> 
+    <br><h3>Introducing our vibrant, head-turning full body, vinyl car coverings – the ultimate makeover for your car.</h3>
+      <h3>Transform your ride into a rolling masterpiece! Splash-proof, scratch-proof, and invincible against damage.</h3> 
+      <p><h2>Elevate your car game and let your personality<br>shine on the streets!</h2>
+  </div>
+  
+  <!-- Column 2 = right = form -->
+  <div class="col2form">
+    This is an order form
+  </div>
+
+  <div class="colA-row3">
+    <!-- set up the car size options -->
+  <div class="customizer-section">
+    Car Size:
+    <select id="car-size" onchange="applyCarImage()">
+      <option value="" disabled selected>Select your car size</option>
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+    </select>
+  </div>
+  </div>
+  
+<!-- Column A Row 4 -->
+  <div class="colA-row4-container">
+    
+<!-- Left (C), split into 4 rows = choose your pattern -->
+    <div class="patterns"> Choose your pattern </div>
+  <div class="fishpattern" onclick="applyPattern('fish')">
+    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707482919/fish_col1_sml_b2wg1c.png" alt="">
+  </div> 
+  <div class="birdpattern" onclick="applyPattern('birds')">
+    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707482915/birds_col1_sml_uq72jk.png" alt="">
+  </div> 
+  <div class="sunflowerpattern" onclick="applyPattern('sunflower')">
+    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707482927/sunflower_col1_sml_bwkczd.png" alt="">
+  </div>
+      
+    
+<!-- Right (D) = images for each car size -->
+<div class="colA-row4-colDcarimages">
+  <div id="original-car">
+    <img id="small-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707318782/small_car_qxgh2s.png" style="width: 400px; display: none;">
+    <img id="medium-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707318777/medium_car_db9fij.png" style="width: 500px; display: none;">
+    <img id="large-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707318768/large_car_r0bvob.png" style="width: 600px; display: none;">
+  </div>
+</div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - NEW Final Project by Paula Harrison (9)</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>
+    <!-- Words that will show on browser tab -->
+  <title>Pretty My Car</title>
+</head>
+
+<body>
+  <div class="container">
+  <!-- top row for logo, background image and main headline -->
+    <div class="header">
+      <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708075453/topimage3_kzewxq.png" alt="">
+      
+      <div class="logo-container">
+        <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707229325/logo_gr4iva.png" alt="" width="200px">
+      </div>
+      
+      <div class="headline">
+        <h1>Get ready to ditch<br>the boring and<br>drive with style!!</h1>
+     </div>   
+      </div> 
+    
+        
+<!-- ROW 2 = INTRO -->
+  <div class="intro">
+    <div id="introText">
+    <h1>Fed up with blending into the crowd?</h1>
+        <br>
+        <h3>Introducing our vibrant, head-turning full body, vinyl car coverings – <br>the ultimate makeover for your car.</h3>
+        <h3>Transform your ride into a rolling masterpiece! <br>Splash-proof, scratch-proof, and invincible against damage.</h3>
+        <p>
+        <h2>Elevate your car game and let your personality<br>shine on the streets!</h2>
+      </div>
+  </div>
+    
+
+    
+<!-- ROW 3 = CHOOSE YOUR CAR SIZE -->  
+<!-- ROW 3 = DIVIDE INTO 4 COLUMNS -->   
+
+  <div class="carSize">
+    <div class="column1">
+      <h4>Choose your<br>car size</h4>
+        </div>
+    
+        <div class="column2">
+            <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707652327/small_car_grey_hfqere.png" alt="Small Car" onclick="applyCarImage('small')">
+  </div>
+    
+    <div class="column3">
+            <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707652577/medium_car_grey_jt7wzg.png" alt="Medium Car" onclick="applyCarImage('medium')">
+  </div>
+    
+    <div class="column4">
+            <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707651219/large_car_grey_y025x8.png" alt="Large Car" onclick="applyCarImage('large')">
+  </div>  
+  </div> 
+       
+
+    
+<!-- ROW 4 = CHOOSE YOUR PATTERN -->  
+<!-- ROW 4 LEFT = DIVIDE INTO 4 ROWS --> 
+  <div class="pattern"> 
+ <div class="row1">
+      <h4>Choose your<br>pattern</h4>
+        </div>
+<!-- FISH PATTERN-->    
+        <div class="row2"> 
+          <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708085498/fish_120px_sjzlti.png" alt=""  onclick="applyPattern('fish')">
+          </div>
+ <!-- BIRDS PATTERN-->    
+    <div class="row3"> 
+          <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708085318/birds_120px_q6blok.png" alt=""  onclick="applyPattern('birds')">
+        </div>
+<!-- SUNFLOWER PATTERN-->     
+    <div class="row4"> 
+          <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708085505/sunflowers_120px_ihqlli.png" alt="" onclick="applyPattern('sunflower')">
+        </div>
+    </div>
+
+    
+<!-- ROW 4 RIGHT = HOLDING BACKGROUND IMAGE OF 3 CARS -->      
+    <div class="largeCar">
+    <img id="backgroundImage" src="                        https://res.cloudinary.com/dq03n8sze/image/upload/v1708001673/3_cars_p9pliy.png" style="width: 650px;">
+      </div>
+    
+    
+<!-- ROW 4 RIGHT = SHOW ORIGINAL CAR SIZE IMAGE -->      
+<div class="largeCar">
+  <div id="original-car">
+    
+    <img id="small-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707318782/small_car_qxgh2s.png" style="width: 400px; display: none;">
+    
+    <img id="medium-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707318777/medium_car_db9fij.png" style="width: 550px; display: none;">
+    
+    <img id="large-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707318768/large_car_r0bvob.png" style="width: 600px; display: none;">
+  </div>
+  
+  
+<!-- ROW 4 RIGHT = SHOW ORIGINAL CAR SIZE WITH PATTERN APPLIED -->      
+<div class="patterned-car">
+    
+<!-- SMALL CAR -->
+    <img id="fishSmallCar" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707484817/small_car_fish_hb9knl.png" style="width: 400px; display: none;">
+    
+    <img id="birdsSmallCar" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707485165/small_car_birds_qnzt69.png" style="width: 400px; display: none;">
+    
+    <img id="sunflowerSmallCar" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707485170/small_car_sunflower_txm81d.png" style="width: 400px; display: none;">
+    
+    
+ <!-- MEDIUM CAR -->
+    <img id="fishMediumCar" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707488508/medium_car_fish_sfhhtc.png" style="width: 550px; display: none;">
+    
+    <img id="birdsMediumCar" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707488497/medium_car_birds_u3gmsu.png" style="width: 550px; display: none;">
+    
+    <img id="sunflowerMediumCar" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707488513/medium_car_sunflower_x77gwx.png" style="width: 550px; display: none;">
+  
+<!-- LARGE CAR -->
+    <img id="fishLargeCar" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707488523/large_car_fish_fvyre6.png" style="width: 600px; display: none;">
+    
+    <img id="birdsLargeCar" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707488520/large_car_birds_iqjeh6.png" style="width: 600px; display: none;">
+    
+    <img id="sunflowerLargeCar" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707488526/large_car_sunflower_duhoe9.png" style="width: 600px; display: none;">  
+</div>
+  </div>
+
+    
+  <!-- SIDEBAR = COMPETITION  -->
+  <div class="sidebar">
+   <div id="formWording">
+          <h1>FREE</h1><br>
+          <h2>COMPETITION</h2>
+     <p>
+     <h3>Join our mailing list and enter our competition to win a sleek vinyl car covering for free! <br> Elevate your vehicle's style with just a click. <br> Don't miss out — subscribe today!</h3><br>
+
+<!-- SIDEBAR = COMPETITION MAILING LIST FORM  -->
+<form action="#" method="post">
+  <div class="form-group">
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name">
+  </div>
+  
+  <div class="form-group">
+    <label for="surname">Surname:</label>
+    <input type="text" id="surname" name="surname">
+  </div>
+  
+  <div class="form-group">
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city">
+  </div>
+  
+  <div class="form-group">
+    <label for="telephone">Telephone:</label>
+    <input type="tel" id="telephone" name="telephone">
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+  </div>
+  
+<div class="form-group">
+    <label for="car-size">Car Size:</label>
+    <select id="car-size" name="car-size">
+      <option value="" disabled selected>Select your car size</option>
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>  
+      </select>
+  </div>
+  
+<input type="submit" value="Submit" onclick="return showPopup()">
+</form>
+
+<!-- This is what will be included inside the popup -->
+<div class="popup" id="popup" style="display: none;">
+  <div id="popup-message"></div>
+  <a href="#" onclick="hidePopup()">Close</a>
+</div>
+<!-- Hidden template for popup content -->
+<div id="popup-template" style="display: none;">
+  <h5>CONGRATULATIONS<br><span id="first_name_placeholder"></span>!!</h5>
+  <br>You've been added to our Mailing List<br>and entered into our<h6>FREE COMPETITION</h6>for a chance to win a sleek vinyl car covering<br>for your <span id="car_size_placeholder"></span> car!
+  <p>In just a few days, we will start filling your inbox with thousands of annoying emails.</p>
+</div>
+    
+ <div id="conditions">
+   <h1>By joining our mailing list and entering the competition, you agree to receive promotional emails. Open to residents of specified regions. Entrants must be aged 18 or older. No purchase necessary. Limited to one entry per person. Winners will be selected randomly and notified via email. Prize fulfillment subject to availability. The decision of the organizers is final. Personal information collected will be used for the purpose of the competition and in accordance with privacy regulations. This promotion is not affiliated with any third-party platform. </h1>   
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

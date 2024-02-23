@@ -1,0 +1,121 @@
+<head>
+    <!-- Words that will show on browser tab -->
+    <title>Pretty My Car</title>
+</head>
+
+<!-- set up the columns within a grid -->
+<!-- Column A = Left,  Column B = Right -->
+<div class="grid">
+<!-- top row for logo -->
+  <div class="top-row1">
+      <img class="top-image" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707648940/topimage2_wctr0r.png" alt="">
+
+  <div class="logo-container">
+    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707229325/logo_gr4iva.png" alt="" width="200px">
+  </div>
+    <div class="headline">
+      <h1>Get ready to ditch<br>the boring and<br>drive with style!!</h1>
+    </div>
+  </div> 
+  
+
+<!-- Main column -->
+<!-- Column A -->
+  <div class="colA-row2">
+    <h1>Fed up with blending into the crowd?</h1> 
+    <br><h3>Introducing our vibrant, head-turning full body, vinyl car coverings – <br>the ultimate makeover for your car.</h3>
+      <h3>Transform your ride into a rolling masterpiece! <br>Splash-proof, scratch-proof, and invincible against damage.</h3> 
+      <p><h2>Elevate your car game and let your personality<br>shine on the streets!</h2>
+  </div>
+  
+  <!-- Column 2 = right = form -->
+  <div class="col2form">
+    This is an order form
+    <!-- set up the car size options
+  <div class="customizer-section">
+    Car Size:
+    <select id="car-size" onchange="applyCarImage()">
+      <option value="" disabled selected>Select your car size</option>
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+    </select>
+  </div> -->
+  </div>
+
+  <div class="colA-row3">
+    <h4>Choose your <br>car size</h4>
+<!-- click small car -->
+  <div class="box">
+    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707652327/small_car_grey_hfqere.png" alt="Small Car" onclick="applyCarImage('small')">
+  </div>
+    
+  <!-- click medium car -->
+  <div class="box">
+    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707652577/medium_car_grey_jt7wzg.png" alt="Medium Car" onclick="applyCarImage('medium')">
+  </div>
+    
+  <!-- click large car  -->
+  <div class="box">
+    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707651219/large_car_grey_y025x8.png" alt="Large Car"onclick="applyCarImage('large')">
+  </div>
+</div>
+    
+  
+<!-- Column A Row 4 -->
+  <div class="colA-row4-container">
+    
+<!-- Left (C), split into 4 rows = choose your pattern -->
+    <div class="patterns"> Choose your pattern </div>
+  <div class="fishpattern" onclick="applyPattern('fish')">
+    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707482919/fish_col1_sml_b2wg1c.png" alt="">
+  </div> 
+  <div class="birdpattern" onclick="applyPattern('birds')">
+    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707482915/birds_col1_sml_uq72jk.png" alt="">
+  </div> 
+  <div class="sunflowerpattern" onclick="applyPattern('sunflower')">
+    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707482927/sunflower_col1_sml_bwkczd.png" alt="">
+  </div>
+    
+      
+    
+<!-- Right (D) = images for each car size -->
+<div class="colA-row4-colDcarimages">
+  <div id="original-car">
+    <img id="small-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707318782/small_car_qxgh2s.png" style="width: 400px; display: none;">
+    
+    <img id="medium-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707318777/medium_car_db9fij.png" style="width: 500px; display: none;">
+    
+    <img id="large-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707318768/large_car_r0bvob.png" style="width: 600px; display: none;">
+  </div>
+
+  
+<!-- Right (D) = patterned cars -->
+  <div id="patterned-car">
+    
+<!-- SMALL CAR -->
+    <img id="fish-small-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707484817/small_car_fish_hb9knl.png" style="width: 400px; display: none;">
+    
+    <img id="birds-small-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707485165/small_car_birds_qnzt69.png" style="width: 400px; display: none;">
+    
+    <img id="sunflower-small-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707485170/small_car_sunflower_txm81d.png" style="width: 400px; display: none;">
+    
+    
+ <!-- MEDIUM CAR -->
+    <img id="fish-medium-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707488508/medium_car_fish_sfhhtc.png" style="width: 400px; display: none;">
+    
+    <img id="birds-medium-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707488497/medium_car_birds_u3gmsu.png" style="width: 400px; display: none;">
+    
+    <img id="sunflower-medium-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707488513/medium_car_sunflower_x77gwx.png" style="width: 400px; display: none;">
+  
+<!-- LARGE CAR -->
+    <img id="fish-large-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707488523/large_car_fish_fvyre6.png" style="width: 400px; display: none;">
+    
+    <img id="birds-large-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707488520/large_car_birds_iqjeh6.png" style="width: 400px; display: none;">
+    
+    <img id="sunflower-large-car" src="https://res.cloudinary.com/dq03n8sze/image/upload/v1707488526/large_car_sunflower_duhoe9.png" style="width: 400px; display: none;">  
+  </div>
+  </div>
+    
+
+

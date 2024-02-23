@@ -1,0 +1,133 @@
+.grid {
+  display: grid;
+  grid-gap: 5px;
+  width: 1200px;
+  margin: 20px auto; /* Center the grid container to sit 20px down from the top and horizontally on the whole page */
+  grid-template-columns: 2fr 1fr; /* Two columns: column A and column B */
+  /*grid-template-rows: auto;*/
+}
+
+/* top row */
+.top-row1 {
+  grid-column: 1 / -1; /* Span across all columns */
+  grid-row: 1; /* Place it in the first row */
+  height: 70px;
+  background-color: darkblue;
+  position: relative;
+  width: 100%
+}
+
+/* Container for the logo */
+.logo-container {
+  position: absolute; /* Position it only in the top row */
+  top: 3px; 
+  left: 10px; /* Maintain a left margin of 10px within the top row */
+  height: 70px; /* Adjust the height as needed */
+}
+
+/* styling for intro text */
+.colA-row2 {
+  grid-column: 1;
+  grid-row: 2;
+  border: 1px solid black; 
+  height: 250px;
+  width: 800px; /* Fixed width for the first column */
+  padding: 20px; /* text margin inside box */
+}
+
+h1 {
+  color: lightblue;
+  font-size: 45px;
+  line-height: 1;
+  margin-top: 0px;
+  margin: 0;
+}
+
+h2 {
+  color: grey;
+  font: Arial, sans serif;
+  font-size: 25px;
+  margin-top: 0px;
+  margin: 0;
+}
+
+h3 {
+  color: grey;
+  font: Arial, sans serif;
+  font-size: 17px;
+  font-weight: normal;
+  margin-top: 0px;
+  margin: 0; 
+  padding: 0; 
+}
+
+/* styling for car size selection */
+.colA-row3 {
+  grid-column: 1;
+  grid-row: 3;
+  border: 1px solid black;
+  height: 10px;
+  width: 800px; /* Fixed width for the first column */
+  padding: 20px; /* text margin inside box */
+}
+
+/* Split Row 4 in column A into 2 coloumns column c = left, column D = right
+column c is then split into 4 rows */
+.colA-row4-container {
+  grid-column: 1 / -1; /* Span all columns */
+  height: 310px;
+  width: 800px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 90px 1fr;  /* two columns = C & D */
+  grid-template-rows: 40px 90px 90px 90px; /* Define row heights for rows in column C */
+}
+
+/* Styles for patterns column (colA, Row 4, Col C*/
+.patterns {
+  width: 90px;
+  height: 40px;
+  border: 1px solid black;
+}
+.fishpattern {
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
+}
+.birdpattern {
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
+}
+.sunflowerpattern {
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
+}
+
+/* styling for car images */
+.colA-row4-colDcarimages {
+  grid-column: 2;
+  grid-row: 1 / -1; /* Span all rows */
+  border: 1px solid black;
+  display: flex; /* Add flex display to center images horizontally */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+
+
+
+/* Specify the column for the form */
+.col2form {
+  grid-column: 2; /* Place it in column B */
+  max-width: 400px; /* Limit the maximum width to 400px */
+  border: 1px solid black;
+  padding: 20px;
+}
+  
+/* Styling */
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+} 
