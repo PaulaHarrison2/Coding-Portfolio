@@ -78,7 +78,40 @@
     min-width: 1200px; /* Adjust as needed */
     margin: 0 auto; /* Center the container horizontally */
 }
-    
+/* Style for modal pop-ups */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Position it fixed */
+    z-index: 1; /* Make sure it appears on top of other elements */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scrolling if necessary */
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Adjust width as needed */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}    
 </style>
 </head>
 <body>
@@ -87,12 +120,11 @@
     <nav>
         <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708959511/Profile_Pic_copy_sq1cm7.png" alt="Profile Image" style="width: 50px; height: 50px;">
         <h1 class="logo">Paula Harrison</h1>
-        <!-- Consider using a <nav> element for navigation links -->
-    </nav>
-    <div class="contact-details">
+         <span class="about-link" onclick="showAboutInfo()">About Me</span>
         <span class="contact-link" onclick="showContactInfo()">Contact</span>
-    </div>
+            </nav>
 </header>
+    
 <main>
     <!-- column 1 -->
     <div class="column">
@@ -167,13 +199,46 @@
     </div>
 </main>
 <!-- Contact Information Modal -->
-<div class="contact-info" id="contactInfo">
-    <span class="close" onclick="hideContactInfo()">&times;</span>
-    <h2>Contact Information</h2>
-    <p>Here's where you can find me. Look forward to chatting!</p>
-    <p>My GitHub:<br>
-        <a href="https://github.com/paulaharrison2" target="_blank">https://github.com/paulaharrison2</a>
-    </p>
-    <p>LinkedIn:<br>
-        <a href="https://www.linkedin.com/in/paula-harrison-a43b771b7" target="_blank">www.linkedin.com/in/paula-harrison-a43b771b7</a>
-    </
+<div class="modal" id="contactInfoModal">
+        <div class="modal-content">
+            <span class="close" onclick="hideContactInfo()">&times;</span>
+            <h2>Contact Information</h2>
+            <p>Here's where you can find me. Look forward to chatting!</p>
+            <p>My GitHub:<br>
+                <a href="https://github.com/paulaharrison2" target="_blank">https://github.com/paulaharrison2</a>
+            </p>
+            <p>LinkedIn:<br>
+                <a href="https://www.linkedin.com/in/paula-harrison-a43b771b7" target="_blank">www.linkedin.com/in/paula-harrison-a43b771b7</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- About Me Modal -->
+    <div class="modal" id="aboutInfoModal">
+        <div class="modal-content">
+            <span class="close" onclick="hideAboutInfo()">&times;</span>
+            <h2>About Me</h2>
+            <!-- Your about me content goes here -->
+            <p>This is where you can write about yourself.</p>
+        </div>
+    </div>
+</div>
+<script>
+    function showContactInfo() {
+        document.getElementById('contactInfoModal').style.display = 'block';
+    }
+
+    function hideContactInfo() {
+        document.getElementById('contactInfoModal').style.display = 'none';
+    }
+
+    function showAboutInfo() {
+        document.getElementById('aboutInfoModal').style.display = 'block';
+    }
+
+    function hideAboutInfo() {
+        document.getElementById('aboutInfoModal').style.display = 'none';
+    }
+</script>
+</body>
+</html>
