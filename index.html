@@ -30,7 +30,7 @@
         text-align: right;
     }
     main {
-        margin: 50px 400px; /* Adds 100px margin on left and right sides */
+        margin: 50px auto; /* Center the main content */
         display: flex;
         justify-content: space-between;
     }
@@ -74,10 +74,14 @@
     .block:hover .overlay-content {
         opacity: 0;
     }
-.container {
-    min-width: 1200px; /* Adjust as needed */
+    .container {
+    max-width: 1200px; /* Set maximum width */
     margin: 0 auto; /* Center the container horizontally */
 }
+    .logo-image {
+        width: 70px; /* Set width */
+        height: 70px; /* Set height */
+        
 /* Style for modal pop-ups */
 .modal {
     display: none; /* Hidden by default */
@@ -122,7 +126,7 @@
         <h1 class="logo">Paula Harrison</h1>
          <span class="about-link" onclick="showAboutInfo()">About Me</span>
         <span class="contact-link" onclick="showContactInfo()">Contact</span>
-            </nav>
+    </nav>
 </header>
     
 <main>
@@ -197,6 +201,7 @@
             </a>
         </div>
     </div>
+    
 </main>
 <!-- Contact Information Modal -->
 <div class="modal" id="contactInfoModal">
@@ -222,7 +227,7 @@
             <p>This is where you can write about yourself.</p>
         </div>
     </div>
-</div>
+
 <script>
     function showContactInfo() {
         document.getElementById('contactInfoModal').style.display = 'block';
