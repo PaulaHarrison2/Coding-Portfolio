@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My GitHub Page</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        width: 100px; /* adjust according to your logo size */
+    }
+    .contact-details {
+        text-align: right;
+    }
+    main {
+        margin: 50px auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .column {
+        width: 45%;
+    }
+    .block {
+        margin-bottom: 20px;
+        position: relative;
+        cursor: pointer;
+    }
+    .block img {
+        width: 100%;
+        height: auto;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .block:hover .overlay {
+        opacity: 1;
+    }
+    .overlay-content {
+        text-align: center;
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <div class="contact-details">
+        Contact: email@example.com | Phone: 123-456-7890
+    </div>
+</header>
+
+<main>
+    <div class="column">
+        <div class="block" onclick="showProject()">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="overlay">
+                <div class="overlay-content">
+                    Project 1
+                </div>
+            </div>
+        </div>
+        <!-- Repeat block for additional projects -->
+    </div>
+    <div class="column">
+        <div class="block" onclick="showProject()">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="overlay">
+                <div class="overlay-content">
+                    Project 2
+                </div>
+            </div>
+        </div>
+        <!-- Repeat block for additional projects -->
+    </div>
+</main>
+
+<script>
+    function showProject() {
+        // Logic to display project details goes here
+        alert("Project details will be shown here.");
+    }
+</script>
+
+</body>
+</html>
