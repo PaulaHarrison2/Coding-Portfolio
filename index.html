@@ -59,11 +59,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        opacity: 1;
+        opacity: 0; /* Initially hide the overlay */
         transition: opacity 0.3s;
     }
     .block:hover .overlay {
-        opacity: 0;
+        opacity: 1; /* Display the overlay on hover */
     }
     .overlay-content {
         text-align: center;
@@ -78,14 +78,11 @@
     min-width: 1200px; /* Adjust as needed */
     width: 100%; /* Ensure the container spans the entire width */
 }
-
     
 </style>
 </head>
 <body>
 <div class="container">
-
-    
 <header>
     <nav>
         <h1 class="logo">Paula Harrison</h1>
@@ -95,7 +92,6 @@
         <span class="contact-link" onclick="showContactInfo()">Contact</span>
     </div>
 </header>
-
 <main>
     <!-- column 1 -->
     <div class="column">
@@ -160,7 +156,6 @@
                       
     </div>
 </main>
-
 <!-- Contact Information Modal -->
 <div class="contact-info" id="contactInfo">
     <span class="close" onclick="hideContactInfo()">&times;</span>
