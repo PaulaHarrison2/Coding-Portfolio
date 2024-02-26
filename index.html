@@ -29,65 +29,44 @@
     .contact-details {
         text-align: right;
     }
-    .main-container {
-    margin: 50px 100px; /* Adds 100px margin on left and right sides */
-}
-    .contact-info {
-        display: none;
-        position: fixed;
+    main {
+        margin: 50px 400px; /* Adds 400px margin on left and right sides */
+    }
+    .column {
+        width: 45%;
+    }
+    .block {
+        width: 200px; /* Set a fixed width */
+        height: 200px; /* Set a fixed height */
+        margin-bottom: 20px;
+        position: relative;
+        cursor: pointer;
+    }
+    .block img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure the image covers the entire square */
+    }
+    .overlay {
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .block:hover .overlay {
+        opacity: 1;
+    }
+    .overlay-content {
+        text-align: center;
         color: white;
-        padding: 20px;
-        box-sizing: border-box;
-        z-index: 999;
     }
-    .close {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-        font-size: 20px;
-    }
-    /* CSS for project squares */
-        .column {
-            width: 45%;
-        }
-        .block {
-            width: 200px; /* Set a fixed width */
-            height: 200px; /* Set a fixed height */
-            margin-bottom: 20px;
-            position: relative;
-            cursor: pointer;
-        }
-        .block img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ensure the image covers the entire square */
-        }
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .block:hover .overlay {
-            opacity: 1;
-        }
-        .overlay-content {
-            text-align: center;
-            color: white;
-        }
 </style>
 </head>
 <body>
