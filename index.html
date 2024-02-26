@@ -59,11 +59,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        opacity: 0; /* Initially hide the overlay */
+        opacity: 1; /* Initially show the overlay */
         transition: opacity 0.3s;
     }
     .block:hover .overlay {
-        opacity: 1; /* Display the overlay on hover */
+        opacity: 0; /* Hide the overlay on hover */
     }
     .overlay-content {
         text-align: center;
