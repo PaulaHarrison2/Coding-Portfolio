@@ -61,11 +61,16 @@
         transition: opacity 0.3s;
     }
     .block:hover .overlay {
-        opacity: 1;
+        opacity: 0;
     }
     .overlay-content {
         text-align: center;
         color: white;
+        opacity: 1;
+        transition: opacity 0.3s;
+    }
+    .block:hover .overlay-content {
+        opacity: 0;
     }
 </style>
 </head>
@@ -87,7 +92,7 @@
             <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708951714/clock_reqqad.jpg" alt="Project 1">
             <div class="overlay">
                 <div class="overlay-content">
-                    Assignment 1 - Hourly Rate Calculator (Javascript)
+                    Assignment 1 <br>Hourly Rate Calculator<br>(Javascript)
                 </div>
             </div>
         </div>
