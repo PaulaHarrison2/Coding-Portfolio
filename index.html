@@ -41,16 +41,12 @@
     main {
         margin: 50px auto; /* Center the main content */
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .container-column {
-        width: 30%; /* Adjust width for three columns */
-        display: flex;
-        align-items: center; /* Center items horizontally within the container */
-        margin: 0 10px; /* Add margin to create space between columns */
-    }
-    .column {
-            width: 100%; /* Occupy full width of container-column */
+        width: calc(33.33% - 20px); /* Adjust width for three columns */
+        margin: 10px; /* Add margin to create space between columns */
     }
     .block {
         width: 300px; /* Set a fixed width */
@@ -90,204 +86,209 @@
         opacity: 0;
     }
     .container {
-    max-width: 1200px; /* Set maximum width */
-    margin: 0 auto; /* Center the container horizontally */
-}
+        max-width: 1200px; /* Set maximum width */
+        margin: 0 auto; /* Center the container horizontally */
+    }
     .logo-image {
         width: 70px; /* Set width */
         height: 70px; /* Set height */
-        
-/* Style for modal pop-ups */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Position it fixed */
-    z-index: 1; /* Make sure it appears on top of other elements */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; /* Enable scrolling if necessary */
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Adjust width as needed */
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}    
+    }
+    /* Style for modal pop-ups */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Position it fixed */
+        z-index: 1; /* Make sure it appears on top of other elements */
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto; /* Enable scrolling if necessary */
+        background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Adjust width as needed */
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
 </style>
 </head>
 <body>
 <div class="container">
 <header>
     <nav>
-        <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708959511/Profile_Pic_copy_sq1cm7.png" alt="Profile Image" style="width: 50px; height: 50px;">
+        <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708959511/Profile_Pic_copy_sq1cm7.png" alt="Profile Image" class="logo-image">
         <h1 class="logo">Paula Harrison</h1>
-   </nav>
-         <span class="about-link" onclick="showAboutInfo()">About Me</span>
-        <span class="contact-link" onclick="showContactInfo()">Contact</span>   
+    </nav>
+    <span class="about-link" onclick="showAboutInfo()">About Me</span>
+    <span class="contact-link" onclick="showContactInfo()">Contact</span>
 </header>
     
 <main>
-    <!-- column 1 -->
-     <div class="container-column">
-         <div class="column">
-        <div class="block" onclick="showProject()">
-            <a href="https://codepen.io/paulaharrison/pen/rNRMebN" target="_blank">
-                <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708955377/clock_e35cux.jpg" alt="Project 1">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        Assignment 1 <br>Hourly Rate Calculator<br>(Javascript)
+    <!-- Row 1 -->
+    <div class="container-row">
+        <div class="container-column">
+            <div class="block" onclick="showProject()">
+                <a href="https://codepen.io/paulaharrison/pen/rNRMebN" target="_blank">
+                    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708955377/clock_e35cux.jpg" alt="Project 1">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            Assignment 1 <br>Hourly Rate Calculator<br>(Javascript)
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        
-        <div class="block" onclick="showProject()">
-            <a href="https://codepen.io/paulaharrison/pen/mdomEwE" target="_blank">
-                <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708955373/wine_fgscrc.jpg" alt="Project 2">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        Assignment 2 <br>Weekend Shopping List<br>(Javascript)
-                    </div>
-                </div>
-            </a>
-        </div>
-        
-        <div class="block" onclick="showProject()">
-            <a href="https://codepen.io/paulaharrison/pen/BabJOOz" target="_blank">
-                <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708955622/TV_qmhssq.jpg" alt="Project 3">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        Assignment 3 <br>Weekend TV Series Recommendations<br>(Javascript)
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>  
-         </div>
-
-        
-    <!-- column 2 -->
-          <div class="container-column">
-    <div class="column">
-        <div class="block" onclick="showProject()">
-            <a href="https://codepen.io/paulaharrison/pen/NWJMKyp" target="_blank">
-                <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708955952/room_colour_cxhvl8.jpg" alt="Project 4">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        Assignment 4 <br>Room Colour Customizer<br>(Javascript, HTML & CSS)
-                    </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
 
-        <div class="block" onclick="showProject()">
-            <a href="https://codepen.io/paulaharrison/full/qBvgPLd" target="_blank">
-                <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708955952/room_colour_cxhvl8.jpg" alt="Project 5">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        Assignment 5 <br>FINAL PROJECT<br>(Javascript, HTML & CSS)
+        <div class="container-column">
+            <div class="block" onclick="showProject()">
+                <a href="https://codepen.io/paulaharrison/pen/mdomEwE" target="_blank">
+                    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708955373/wine_fgscrc.jpg" alt="Project 2">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            Assignment 2 <br>Weekend Shopping List<br>(Javascript)
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
 
-        <div class="block" onclick="showProject()">
-            <a href="PUT YOUR CODE LINK HERE" target="_blank">
-                <img src="PUT IMAGE JPG HERE" alt="Project 6">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        Assignment 6 <br>NEW HOME PROJECT<br>(Javascript)
+        <div class="container-column">
+            <div class="block" onclick="showProject()">
+                <a href="https://codepen.io/paulaharrison/pen/BabJOOz" target="_blank">
+                    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708955622/TV_qmhssq.jpg" alt="Project 3">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            Assignment 3 <br>Weekend TV Series Recommendations<br>(Javascript)
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     </div>
-              </div>
-  
-              
-    <!-- column 3 -->
-          <div class="container-column">
-    <div class="column">
-        <div class="block" onclick="showProject()">
-            <a href="PUT YOUR CODE LINK HERE" target="_blank">
-                <img src="PUT IMAGE JPG HERE" alt="Project 7">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        Assignment 7 <br>NEW HOME PROJECT<br>(Javascript)
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="block" onclick="showProject()">
-            <a href="PUT YOUR CODE LINK HERE" target="_blank">
-                <img src="PUT IMAGE JPG HERE" alt="Project 8">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        Assignment 8 <br>NEW HOME PROJECT<br>(Javascript)
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="block" onclick="showProject()">
-            <a href="PUT YOUR CODE LINK HERE" target="_blank">
-                <img src="PUT IMAGE JPG HERE" alt="Project 9">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        Assignment 9 <br>NEW HOME PROJECT<br>(Javascript)
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-              </div>
-
-
     
+    <!-- Row 2 -->
+    <div class="container-row">
+        <div class="container-column">
+            <div class="block" onclick="showProject()">
+                <a href="https://codepen.io/paulaharrison/pen/NWJMKyp" target="_blank">
+                    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708955952/room_colour_cxhvl8.jpg" alt="Project 4">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            Assignment 4 <br>Room Colour Customizer<br>(Javascript, HTML & CSS)
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-column">
+            <div class="block" onclick="showProject()">
+                <a href="https://codepen.io/paulaharrison/full/qBvgPLd" target="_blank">
+                    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708955952/room_colour_cxhvl8.jpg" alt="Project 5">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            Assignment 5 <br>FINAL PROJECT<br>(Javascript, HTML & CSS)
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-column">
+            <div class="block" onclick="showProject()">
+                <a href="PUT YOUR CODE LINK HERE" target="_blank">
+                    <img src="PUT IMAGE JPG HERE" alt="Project 6">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            Assignment 6 <br>NEW HOME PROJECT<br>(Javascript)
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="container-row">
+        <div class="container-column">
+            <div class="block" onclick="showProject()">
+                <a href="PUT YOUR CODE LINK HERE" target="_blank">
+                    <img src="PUT IMAGE JPG HERE" alt="Project 7">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            Assignment 7 <br>NEW HOME PROJECT<br>(Javascript)
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-column">
+            <div class="block" onclick="showProject()">
+                <a href="PUT YOUR CODE LINK HERE" target="_blank">
+                    <img src="PUT IMAGE JPG HERE" alt="Project 8">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            Assignment 8 <br>NEW HOME PROJECT<br>(Javascript)
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-column">
+            <div class="block" onclick="showProject()">
+                <a href="PUT YOUR CODE LINK HERE" target="_blank">
+                    <img src="PUT IMAGE JPG HERE" alt="Project 9">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            Assignment 9 <br>NEW HOME PROJECT<br>(Javascript)
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </main>
+
 <!-- Contact Information Modal -->
 <div class="modal" id="contactInfoModal">
-        <div class="modal-content">
-            <span class="close" onclick="hideContactInfo()">&times;</span>
-            <h2>Contact Information</h2>
-            <p>Here's where you can find me. Look forward to chatting!</p>
-            <p>My GitHub:<br>
-                <a href="https://github.com/paulaharrison2" target="_blank">https://github.com/paulaharrison2</a>
-            </p>
-            <p>LinkedIn:<br>
-                <a href="https://www.linkedin.com/in/paula-harrison-a43b771b7" target="_blank">www.linkedin.com/in/paula-harrison-a43b771b7</a>
-            </p>
-        </div>
+    <div class="modal-content">
+        <span class="close" onclick="hideContactInfo()">&times;</span>
+        <h2>Contact Information</h2>
+        <p>Here's where you can find me. Look forward to chatting!</p>
+        <p>My GitHub:<br>
+            <a href="https://github.com/paulaharrison2" target="_blank">https://github.com/paulaharrison2</a>
+        </p>
+        <p>LinkedIn:<br>
+            <a href="https://www.linkedin.com/in/paula-harrison-a43b771b7" target="_blank">www.linkedin.com/in/paula-harrison-a43b771b7</a>
+        </p>
     </div>
+</div>
 
-    <!-- About Me Modal -->
-    <div class="modal" id="aboutInfoModal">
-        <div class="modal-content">
-            <span class="close" onclick="hideAboutInfo()">&times;</span>
-            <h2>About Me</h2>
-            <!-- Your about me content goes here -->
-            <p>This is where you can write about yourself.</p>
-        </div>
+<!-- About Me Modal -->
+<div class="modal" id="aboutInfoModal">
+    <div class="modal-content">
+        <span class="close" onclick="hideAboutInfo()">&times;</span>
+        <h2>About Me</h2>
+        <!-- Your about me content goes here -->
+        <p>This is where you can write about yourself.</p>
     </div>
+</div>
 
 <script>
     function showContactInfo() {
