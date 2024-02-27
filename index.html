@@ -37,12 +37,14 @@
     .about-link {
         margin-left: auto; /* Pushes the About Me link to the right */
         margin-right: 10px; /* Add margin to the right of the About Me link */
+        cursor: pointer;
     }
     main {
         margin: 50px auto; /* Center the main content */
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        max-width: 1200px; /* Limit the maximum width */
     }
     .container-column {
         width: calc(33.33% - 20px); /* Adjust width for three columns */
@@ -81,9 +83,6 @@
         color: white;
         opacity: 1;
         transition: opacity 0.3s;
-    }
-    .block:hover .overlay-content {
-        opacity: 0;
     }
     .container {
         max-width: 1200px; /* Set maximum width */
