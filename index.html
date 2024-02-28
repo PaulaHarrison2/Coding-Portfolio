@@ -20,12 +20,18 @@
         align-items: center;
         max-width: 1200px; /* Limit the maximum width */
     }
+    .logo-container {
+    display: flex;
+    align-items: center;
+    }
     .logo {
         font-size: 24px;
     }
     .logo-image {
         width: 90px; /* Adjust width as needed */
         height: auto; /* Maintain aspect ratio */
+        margin-right: 20px; /* Adjust spacing between the image and text */
+
     }
     .container {
     max-width: 1200px; /* Set maximum width */
@@ -86,8 +92,10 @@
 </head>
 <body>
 <header>
+    <div class="logo-container">
     <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708959511/Profile_Pic_copy_sq1cm7.png" alt="Profile Image" class="logo-image">
     <div class="logo">Paula Harrison</div>
+            </div>
 </header>
 
 <div class="container">
