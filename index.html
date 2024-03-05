@@ -12,8 +12,8 @@
         font-family: Arial, sans-serif;
     }
     .container {
-    max-width: 1200px; /* Set maximum width */
-    margin: 0 auto; /* Center the container horizontally */
+        max-width: 1200px; /* Set maximum width */
+        margin: 0 auto; /* Center the container horizontally */
     }
     header {
         background-color: #333;
@@ -21,12 +21,16 @@
         padding: 10px; /* Adjust padding to reduce the height */
         display: flex;
         align-items: center;
+        justify-content: center; /* Center horizontally */
+        width: 100%; /* Ensure full width */
         max-width: 1200px; /* Limit the maximum width */
     }
     .logo-container {
         display: flex;
         align-items: center;
-        margin-right: auto; /* Pushes the logo and logo image to the left */
+        justify-content: flex-start; /* Align to the left */
+        width: 100%; /* Ensure the logo container takes full width */
+        padding-left: 20px; /* Add some left padding to separate from the edge */
     }
     .logo {
         font-size: 24px;
@@ -38,11 +42,12 @@
     }
     .sub-heading {
         font-weight: bold;
-        padding-bottom: 20px;
+        font-size: 24px;
     }
     .small-heading {
         font-weight: bold;
         padding-bottom: 10px;
+        padding-top: 20px;
     }
     .introduction {
         text-align: left;
@@ -56,7 +61,8 @@
         width: 200px; /* Set a fixed width */
         height: 200px; /* Set a fixed height */
         margin-bottom: 20px;
-        margin: 10px;
+        margin-right: 10px;
+        padding-left: 20px; /* Add some left padding to separate from the edge */
         position: relative;
         cursor: pointer;
     }
@@ -90,52 +96,67 @@
 </style>
 </head>
 <body>
-<header>
-    <div class="logo-container">
-    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708959511/Profile_Pic_copy_sq1cm7.png" alt="Profile Image" class="logo-image">
-    <div class="logo">Paula Harrison</div>
+<div class="container">
+    <header>
+        <div class="logo-container">
+            <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708959511/Profile_Pic_copy_sq1cm7.png" alt="Profile Image" class="logo-image">
+            <div class="logo">Paula Harrison</div>
+        </div>
+    </header>
+
+    <div style="margin-top: 20px;">
+        <div class="introduction">
+            Having spent many years as a Graphic Designer with a focus on print design, I transitioned to working remotely from Spain as an online Business English teacher, more recently catering to senior executives at NTT Data. 
+<p>In January of this year, I took my first steps into the realm of coding by enrolling in the CFG Kickstarter Javascript course. I'm now preparing to delve into the CFG Kickstarter Python course scheduled to start at the end of March 2024. </p>
+<p>I thrive in multilingual environments and am adept at seamlessly integrating into diverse teams. With excellent communication skills to help facilitate clear and effective interaction with colleagues and stakeholders, I embody a team-player mentality and am very approachable, fostering collaborative environments where ideas flourish. 
+<p>With a self-driven and proactive approach, I tackle challenges head-on, leveraging my motivation to achieve goals effectively. </p>
+<p>At work, I pride myself on being meticulously organized and methodical, with a sharp eye for detail. I have a knack for breaking down complex problems and crafting innovative solutions and I approach tasks with an analytical mindset and a touch of obsessiveness, ensuring they're completed to the highest standard possible. </p>
+<p>Additionally, my past experience in the design world involved organizing and participating in international meetings, as well as managing large teams and high-level projects across various sectors. Interestingly, I continue to manage a remote team of teachers for NTT Data's executive course, overseeing the coordination of schedules for 6 teachers and 82 students on a weekly basis.</p>
+<p>Throughout the Javascript course, I've consistently sought to push the boundaries, bypassing the typical 'Hello World' projects in favour of more challenging assignments. </p>
+<p>From a designer’s perspective, I would have liked the actual design layout of my final project to be more aesthetically pleasing, and needed to constantly remind myself that I was in fact a beginner at coding and should not be so hard on myself.</p>
+<p>Despite this, I'm thrilled with the progress I've made within just 16 hours of instruction. I feel it showcases my dedication and rapid skill acquisition, which obviously involved a lot of additional reading and self-study, including diving into HTML and CSS, which had its own steep learning curve.
+<p>I chose to work independently on my final project, foregoing the opportunity to collaborate with a team. This decision stemmed from my extensive background in team environments, as previously mentioned.</p>
+<p>On a personal note, as I mentioned earlier, I reside in Spain. In fact, I actually live off-grid which has truly honed my skills. Achieving virtual self-sufficiency, I've mastered the art of constructing stone walls, built a swimming pool, and even wired my house to harness electricity from our solar panels.</p>
+
+        </div>
+        <div class="sub-heading">Javascript Course Projects</div>
+        <div class="additional-text">
+        Below you will find links to my final projects as well as some working progress versions</div>
+
+        <div class="small-heading">Assignment 1 : Hourly Rate Calculator (Javascript)</div>
+        <div class="blocks">
+            <div class="block" onclick="showProject()">
+                <a href="https://codepen.io/paulaharrison/pen/rNRMebN" target="_blank">
+                    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708955377/clock_e35cux.jpg" alt="Project 1">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            Assignment 1 <br>Hourly Rate Calculator<br>(Javascript)
+                        </div>
+                    </div>
+                </a>
             </div>
-</header>
 
-<div class="container" style="margin-top: 20px;">
-    <div class="introduction">
-        Welcome to my JavaScript Course Projects!
-    </div>
-    <div class="sub-heading">Javascript Course Projects</div>
-
-    <div class="small-heading">Assignment 1 : Hourly Rate Calculator (Javascript)</div>
-    <div class="blocks">
-        <div class="block" onclick="showProject()">
-            <a href="https://codepen.io/paulaharrison/pen/rNRMebN" target="_blank">
-                <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708955377/clock_e35cux.jpg" alt="Project 1">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        Assignment 1 <br>Hourly Rate Calculator<br>(Javascript)
+            <div class="block" onclick="showProject()">
+                <a href="https://codepen.io/paulaharrison/pen/mdomEwE" target="_blank">
+                    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708955373/wine_fgscrc.jpg" alt="Project 2">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            Assignment 2 <br>Weekend Shopping List<br>(Javascript)
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
+                </a>
+            </div>
 
-        <div class="block" onclick="showProject()">
-            <a href="https://codepen.io/paulaharrison/pen/mdomEwE" target="_blank">
-                <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708955373/wine_fgscrc.jpg" alt="Project 2">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        Assignment 2 <br>Weekend Shopping List<br>(Javascript)
+            <div class="block" onclick="showProject()">
+                <a href="https://codepen.io/paulaharrison/pen/BabJOOz" target="_blank">
+                    <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708955952/room_colour_cxhvl8.jpg" alt="Project 3">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            Assignment 3 <br>Weekend TV Series Recommendations<br>(Javascript)
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="block" onclick="showProject()">
-            <a href="https://codepen.io/paulaharrison/pen/BabJOOz" target="_blank">
-                <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708955952/room_colour_cxhvl8.jpg" alt="Project 3">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        Assignment 3 <br>Weekend TV Series Recommendations<br>(Javascript)
-                    </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     </div>
 </div>
