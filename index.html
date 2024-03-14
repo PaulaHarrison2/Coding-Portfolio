@@ -53,6 +53,9 @@
         text-align: left;
         padding-bottom: 20px;
     }
+    #moreText {
+    display: none;
+}
     .blocks {
         display: flex;
         flex-wrap: wrap;
@@ -108,7 +111,8 @@
 <div class="introduction"> Having spent many years as a Graphic Designer with a focus on print design, I transitioned to working remotely from Spain as an online Business English teacher, more recently catering to senior executives at NTT Data. 
 <p>In January of this year, I took my first steps into the realm of coding by enrolling in the CFG Kickstarter Javascript course. I'm now preparing to delve into the CFG Kickstarter Python course scheduled to start at the end of March 2024. </p>
 <p>I thrive in multilingual environments and am adept at seamlessly integrating into diverse teams. With excellent communication skills to help facilitate clear and effective interaction with colleagues and stakeholders, I embody a team-player mentality and am very approachable, fostering collaborative environments where ideas flourish. 
-<p>With a self-driven and proactive approach, I tackle challenges head-on, leveraging my motivation to achieve goals effectively. </p>
+<p>With a self-driven and proactive approach, I tackle challenges head-on, leveraging my motivation to achieve goals effectively. </p> 
+  <span id="moreText" style="display:none;">
 <p>At work, I pride myself on being meticulously organized and methodical, with a sharp eye for detail. I have a knack for breaking down complex problems and crafting innovative solutions and I approach tasks with an analytical mindset and a touch of obsessiveness, ensuring they're completed to the highest standard possible. </p>
 <p>Additionally, my past experience in the design world involved organizing and participating in international meetings, as well as managing large teams and high-level projects across various sectors. Interestingly, I continue to manage a remote team of teachers for NTT Data's executive course, overseeing the coordination of schedules for 6 teachers and 82 students on a weekly basis.</p>
 <p>Throughout the Javascript course, I've consistently sought to push the boundaries, bypassing the typical 'Hello World' projects in favour of more challenging assignments. </p>
@@ -116,7 +120,8 @@
 <p>Despite this, I'm thrilled with the progress I've made within just 16 hours of instruction. I feel it showcases my dedication and rapid skill acquisition, which obviously involved a lot of additional reading and self-study, including diving into HTML and CSS, which had its own steep learning curve.
 <p>I chose to work independently on my final project, foregoing the opportunity to collaborate with a team. This decision stemmed from my extensive background in team environments, as previously mentioned.</p>
 <p>On a personal note, as I mentioned earlier, I reside in Spain. In fact, I actually live off-grid which has truly honed my skills. Achieving virtual self-sufficiency, I've mastered the art of constructing stone walls, built a swimming pool, and even wired my house to harness electricity from our solar panels.</p>
-
+</span></p>
+    <button onclick="toggleText()" id="readMoreBtn">Read More</button>
         </div>
         <div class="sub-heading">Javascript Course Projects</div>
         <div class="additional-text">
@@ -174,6 +179,20 @@ Bonus :
 <script>
     function showProject() {
         // Implement logic to show project details
+    }
+</script>
+    <script>
+    function toggleText() {
+        var moreText = document.getElementById("moreText");
+        var btnText = document.getElementById("readMoreBtn");
+
+        if (moreText.style.display === "none") {
+            moreText.style.display = "inline";
+            btnText.innerHTML = "Read Less";
+        } else {
+            moreText.style.display = "none";
+            btnText.innerHTML = "Read More";
+        }
     }
 </script>
 </body>
