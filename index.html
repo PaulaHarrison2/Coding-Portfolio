@@ -14,34 +14,35 @@
         margin-right: 30px; /* Add right margin */
     }
     .container {
-        max-width: 1200px; /* Set maximum width */
-        margin: 0 auto; /* Center the container horizontally */
-    }
+    max-width: 1200px; /* Set maximum width */
+    width: 100%; /* Ensure full width */
+    display: flex;
+    align-items: center;
+}
     header {
-        background-color: #333;
-        color: white;
-        padding: 10px; /* Adjust padding to reduce the height */
-        display: flex;
-        align-items: center;
-        justify-content: center; /* Center horizontally */
-        width: 100%; /* Ensure full width */
-        max-width: 1200px; /* Limit the maximum width */
-    }
+    background-color: #333;
+    color: white;
+    padding: 10px; /* Adjust padding to reduce the height */
+    width: 100%; /* Ensure full width */
+}
     .logo-container {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start; /* Align to the left */
-        width: 100%; /* Ensure the logo container takes full width */
-        padding-left: 20px; /* Add some left padding to separate from the edge */
-    }
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align to the left */
+}
     .logo {
-        font-size: 24px;
-    }
+    font-size: 24px;
+    margin-right: 20px; /* Adjust spacing between the image and text */
+}
     .logo-image {
-        width: 90px; /* Adjust width as needed */
-        height: auto; /* Maintain aspect ratio */
-        margin-right: 20px; /* Adjust spacing between the image and text */
-    }
+    width: 90px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+    h1 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 100px; /* Adjust to move "My Coding Journey" to the right */
+}
     .sub-heading {
         font-weight: bold;
         font-size: 24px;
@@ -104,13 +105,15 @@
 </style>
 </head>
 <body>
-<div class="container">
-    <header>
+<header>
+    <div class="container">
         <div class="logo-container">
             <img src="https://res.cloudinary.com/dq03n8sze/image/upload/v1708959511/Profile_Pic_copy_sq1cm7.png" alt="Profile Image" class="logo-image">
             <div class="logo">Paula Harrison</div>
         </div>
-    </header>
+        <h1>My Coding Journey</h1>
+    </div>
+</header>
 
     <div style="margin-top: 20px;">
 <div class="sub-heading">About me</div><p>
