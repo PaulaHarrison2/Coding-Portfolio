@@ -43,6 +43,33 @@
     font-size: 36px;
     margin-left: 100px; /* Adjust to move "My Coding Journey" to the right */
 }
+
+    .navigation {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    padding: 10px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navigation ul li a {
+    color: grey; /* Grey color */
+    text-decoration: none;
+    font-weight: bold; /* Bold text */
+}
+
+.navigation ul li a:hover {
+    text-decoration: underline;
+}
     .sub-heading {
         font-weight: bold;
         font-size: 24px;
@@ -115,6 +142,14 @@
     </div>
 </header>
 
+    <nav class="navigation">
+    <ul>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">JavaScript Journey</a></li>
+        <li><a href="#">Python Journey</a></li>
+    </ul>
+</nav>
+    
     <div style="margin-top: 20px;">
 <div class="sub-heading">About me</div><p>
 <div class="small-heading">Introduction</div>
