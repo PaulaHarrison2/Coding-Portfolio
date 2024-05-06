@@ -142,13 +142,14 @@
     </div>
 </header>
 
-    <nav class="navigation">
+<nav class="navigation">
     <ul>
-        <li><a href="#">About Me</a></li>
+        <li><a href="#" id="about-link">About Me</a></li>
         <li><a href="javascript-journey.html" id="javascript-journey-link">JavaScript Journey</a></li>
-        <li><a href="#">Python Journey</a></li>
+        <li><a href="python-journey.html" id="python-journey-link">Python Journey</a></li>
     </ul>
 </nav>
+
     
     <div style="margin-top: 20px;">
 <div class="sub-heading">About me</div><p>
@@ -605,10 +606,21 @@ You should:
 </script>
     
     <script>
-    // Get the link element by its ID
+    // Get the link elements by their IDs
+    const aboutLink = document.getElementById("about-link");
     const javascriptJourneyLink = document.getElementById("javascript-journey-link");
+    const pythonJourneyLink = document.getElementById("python-journey-link");
 
-    // Add an event listener for click event
+    // Add event listeners for click events
+    aboutLink.addEventListener("click", function(event) {
+        // Prevent the default action of the link (prevents navigating to #)
+        event.preventDefault();
+        
+        // Navigate to about.html
+        window.location.href = "about.html";
+    });
+
+    // Add an event listener for the JavaScript Journey link
     javascriptJourneyLink.addEventListener("click", function(event) {
         // Prevent the default action of the link (prevents navigating to #)
         event.preventDefault();
@@ -616,7 +628,17 @@ You should:
         // Navigate to javascript-journey.html
         window.location.href = "javascript-journey.html";
     });
+
+    // Add an event listener for the Python Journey link
+    pythonJourneyLink.addEventListener("click", function(event) {
+        // Prevent the default action of the link (prevents navigating to #)
+        event.preventDefault();
+        
+        // Navigate to python-journey.html
+        window.location.href = "python-journey.html";
+    });
 </script>
+
     
     <script>
     function toggleText() {
