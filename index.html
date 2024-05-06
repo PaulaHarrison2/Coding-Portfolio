@@ -145,7 +145,7 @@
     <nav class="navigation">
     <ul>
         <li><a href="#">About Me</a></li>
-        <li><a href="#">JavaScript Journey</a></li>
+        <li><a href="javascript-journey.html" id="javascript-journey-link">JavaScript Journey</a></li>
         <li><a href="#">Python Journey</a></li>
     </ul>
 </nav>
@@ -603,6 +603,21 @@ You should:
         // Implement logic to show project details
     }
 </script>
+    
+    <script>
+    // Get the link element by its ID
+    const javascriptJourneyLink = document.getElementById("javascript-journey-link");
+
+    // Add an event listener for click event
+    javascriptJourneyLink.addEventListener("click", function(event) {
+        // Prevent the default action of the link (prevents navigating to #)
+        event.preventDefault();
+        
+        // Navigate to javascript-journey.html
+        window.location.href = "javascript-journey.html";
+    });
+</script>
+    
     <script>
     function toggleText() {
         var moreText = document.getElementById("moreText");
