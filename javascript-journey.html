@@ -44,7 +44,7 @@
     margin-left: 100px; /* Adjust to move "My Coding Journey" to the right */
 }
 
-  .navigation {
+    .navigation {
     display: flex;
     justify-content: flex-start; /* Align to the left */
     padding: 10px;
@@ -70,9 +70,6 @@
 .navigation ul li a:hover {
     text-decoration: underline;
 }
-
-
-  
     .sub-heading {
         font-weight: bold;
         font-size: 24px;
@@ -145,16 +142,17 @@
     </div>
 </header>
 
-  
 <nav class="navigation">
     <ul>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">JavaScript Journey</a></li>
-        <li><a href="#">Python Journey</a></li>
+        <li><a href="#" id="about-link">About Me</a></li>
+        <li><a href="javascript-journey.html" id="javascript-journey-link">JavaScript Journey</a></li>
+        <li><a href="python-journey.html" id="python-journey-link">Python Journey</a></li>
     </ul>
 </nav>
 
-  
+    
+    <div style="margin-top: 20px;">
+
         <div class="sub-heading">Javascript Course Projects</div>
         <div class="additional-text">
         Below you will find links to my final projects as well as some working progress versions</div><p>
@@ -550,6 +548,42 @@ You should:
         // Implement logic to show project details
     }
 </script>
+    
+    <script>
+    // Get the link elements by their IDs
+    const aboutLink = document.getElementById("about-link");
+    const javascriptJourneyLink = document.getElementById("javascript-journey-link");
+    const pythonJourneyLink = document.getElementById("python-journey-link");
+
+    // Add event listeners for click events
+    aboutLink.addEventListener("click", function(event) {
+        // Prevent the default action of the link (prevents navigating to #)
+        event.preventDefault();
+        
+        // Navigate to about.html
+        window.location.href = "about.html";
+    });
+
+    // Add an event listener for the JavaScript Journey link
+    javascriptJourneyLink.addEventListener("click", function(event) {
+        // Prevent the default action of the link (prevents navigating to #)
+        event.preventDefault();
+        
+        // Navigate to javascript-journey.html
+        window.location.href = "javascript-journey.html";
+    });
+
+    // Add an event listener for the Python Journey link
+    pythonJourneyLink.addEventListener("click", function(event) {
+        // Prevent the default action of the link (prevents navigating to #)
+        event.preventDefault();
+        
+        // Navigate to python-journey.html
+        window.location.href = "python-journey.html";
+    });
+</script>
+
+    
     <script>
     function toggleText() {
         var moreText = document.getElementById("moreText");
